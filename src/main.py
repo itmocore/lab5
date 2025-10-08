@@ -16,7 +16,4 @@ print(re.findall(r'\bи\s+([а-яё]+)', text, flags=re.I))
 #task2
 
 html = open('task2.html', encoding='utf-8').read()
-print( re.findall(r'font-family\s*:\s*([^;}{]+)', html, flags=re.I))
-
-#task3
-
+print( re.findall(r'font-family(.*)', html, flags=re.I))
